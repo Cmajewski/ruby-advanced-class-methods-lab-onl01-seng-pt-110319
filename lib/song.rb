@@ -48,7 +48,8 @@ attr_accessor :name, :artist_name
     parse_data=data.split(" - ")
     artist_name=parse_data[0]
     song_name=parse_data[1]
-    song=self.create_by_name(song_name)
+    song=self.create
+    song.name=song_name
     song.artist_name=artist_name
   end
 
