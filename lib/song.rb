@@ -23,8 +23,8 @@ attr_accessor :name
   end
 
   def self.create_by_name(song_name)
-    song=self.new_by_name(song_name)
-    song.save
+    song=self.create
+    song.name=song_name
     song
   end
 
