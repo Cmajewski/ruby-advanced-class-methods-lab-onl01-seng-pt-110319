@@ -7,7 +7,7 @@ attr_accessor :name
   end
 
   def save
-    @@ll<<self
+    @@all<<self
   end
 
   def self.create
