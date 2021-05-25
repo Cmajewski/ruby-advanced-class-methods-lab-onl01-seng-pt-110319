@@ -25,6 +25,7 @@ attr_accessor :name
   def self.create_by_name(song_name)
     song=self.new_by_name(song_name)
     song.save
+    song
   end
 
 end
