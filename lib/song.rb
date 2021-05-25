@@ -6,9 +6,8 @@ attr_accessor :name
     @@ll<<self
   end
 
-  def self.create(name)
+  def self.create
     song=self.new
-    song.name=name
     song.save
   end
 
