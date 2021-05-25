@@ -6,6 +6,10 @@ attr_accessor :name
     @name=name
   end
 
+  def self.all
+    @@all
+  end
+
   def self.create
     song=self.new
     @@all<<song
