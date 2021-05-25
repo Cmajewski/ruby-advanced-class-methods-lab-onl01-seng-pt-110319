@@ -47,9 +47,10 @@ attr_accessor :name, :artist_name
   def self.new_from_filename(data)
     parse_data=data.split(" - ")
     artist_name=parse_data[0]
-    song_name=parse_data[1]
+    song_name=parse_data[1].gsub(".mp3","")
     song=self.create_by_name(song_name)
     song.artist_name=artist_name
+    song
   end
 
   def self.create_from_filename
